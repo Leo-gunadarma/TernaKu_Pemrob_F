@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">TernaKu</string>
+    <string name="text_deskripsi_aplikasi">Aplikasi kelola ternak yang siap membantu kamu!</string>
+    <string name="logo_ternaku">Logo Ternaku</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="registrasi_pengguna">Registrasi Pengguna</string>
+    <string name="masukan_nama">Masukan Nama</string>
+    <string name="nama">Nama</string>
+    <string name="double_dot">:</string>
+    <string name="nama_pengguna">Nama Pengguna</string>
+    <string name="email">Email</string>
+    <string name="masukan_email">Masukan Email</string>
+    <string name="password">Password</string>
+    <string name="masukan_password">Masukan Password</string>
+    <string name="alamat">Alamat</string>
+    <string name="masukan_alamat">Masukan Alamat</string>
+    <string name="no_telp">No Telp</string>
+    <string name="masukan_no_hp">085XXXX</string>
+    <string name="login_pengguna">Login Pengguna</string>
 </resources>
