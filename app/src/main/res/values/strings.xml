@@ -18,4 +18,28 @@
     <string name="no_telp">No Telp</string>
     <string name="masukan_no_hp">085XXXX</string>
     <string name="login_pengguna">Login Pengguna</string>
+    <string name="kelola_hewan_ternak">Kelola Hewan Ternak</string>
+    <string name="kelola_kandang_ternak">Kelola Kandang Ternak</string>
+    <string name="kelola_obat_ternak">Kelola Obat Ternak</string>
+    <string name="pengaturan_profil">Pengaturan Profil</string>
+    <string name="halo_silahkan_pilih_menu">Halo, Silahkan Pilih Menu</string>
+    <string name="form_tambah_data_hewan_ternak">Form Tambah Data Hewan Ternak</string>
+    <string name="masukan_nama_hewan">Masukan Nama Hewan:</string>
+    <string name="contoh_ayam">Contoh: Ayam</string>
+    <string name="masukan_ras_hewan">Masukan Ras Hewan</string>
+    <string name="contoh_boiler">Contoh: Boiler</string>
+    <string name="masukan_jenis_hewan">Masukan Jenis Hewan</string>
+    <string name="masukan_jumlah_hewan">Masukan Jumlah Hewan</string>
+    <string name="contoh_200">Contoh: 200</string>
+    <string name="jadwal_makan">Jadwal Makan</string>
+    <string name="pagi_siang">Pagi - Siang</string>
+    <string name="siang_sore">Siang - Sore</string>
+    <string name="pagi_sore">Pagi - Sore</string>
+    <string name="simpan_data">Simpan Data</string>
+    <string-array name="jenis_hewan">
+        <item>Jenis Hewan</item>
+        <item>Ovipar (Bertelur)</item>
+        <item>Vivipar (Malahirkan)</item>
+        <item>Ovovivipar (Bertelur dan Melahirkan)</item>
+    </string-array>
 </resources>

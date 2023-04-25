@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".TambahHewanActivity">
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/amaranth"
+        android:text="@string/form_tambah_data_hewan_ternak"
+        android:textColor="@color/tema_aplikasi3"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <TextView
+            android:id="@+id/textViewNamaHewan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amaranth"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/masukan_nama_hewan"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextNamaHewan"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:autofillHints="@string/masukan_nama_hewan"
+            android:background="@drawable/input_box"
+            android:ems="10"
+            android:hint="@string/contoh_ayam"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <TextView
+            android:id="@+id/textViewRasHewan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amaranth"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/masukan_ras_hewan"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextRasHewan"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:autofillHints="@string/masukan_ras_hewan"
+            android:background="@drawable/input_box"
+            android:ems="10"
+            android:hint="@string/contoh_boiler"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <TextView
+            android:id="@+id/textViewJenisHewan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amaranth"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/masukan_jenis_hewan"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/input_box">
+
+            <Spinner
+                android:id="@+id/spinnerJenisHewan"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:backgroundTintMode="add"
+                android:entries="@array/jenis_hewan" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textViewJumlahHewan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Masukan Jumlah Hewan"
+            android:fontFamily="@font/amaranth"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/masukan_jumlah_hewan"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextJumlahHewan"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:autofillHints="MASUK"
+            android:background="@drawable/input_box"
+            android:ems="10"
+            android:hint="@string/contoh_200"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amaranth"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/jadwal_makan"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupJadwalMakan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/input_box">
+
+            <RadioButton
+                android:id="@+id/radioButtonPagiSiang"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="@string/pagi_siang" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSiangSore"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="@string/siang_sore" />
+
+            <RadioButton
+                android:id="@+id/radioButtonPagiSore"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="@string/pagi_sore" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="@string/simpan_data"
+            app:icon="@drawable/ic_simpan"
+            app:iconGravity="textEnd" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
