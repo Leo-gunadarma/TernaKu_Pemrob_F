@@ -26,12 +26,12 @@
     <string name="form_tambah_data_hewan_ternak">Form Tambah Data Hewan Ternak</string>
     <string name="masukan_nama_hewan">Masukan Nama Hewan:</string>
     <string name="contoh_ayam">Contoh: Ayam</string>
-    <string name="masukan_ras_hewan">Masukan Ras Hewan</string>
+    <string name="masukan_ras_hewan">Masukan Ras Hewan:</string>
     <string name="contoh_boiler">Contoh: Boiler</string>
-    <string name="masukan_jenis_hewan">Masukan Jenis Hewan</string>
-    <string name="masukan_jumlah_hewan">Masukan Jumlah Hewan</string>
+    <string name="masukan_jenis_hewan">Masukan Jenis Hewan:</string>
+    <string name="masukan_jumlah_hewan">Masukan Jumlah Hewan:</string>
     <string name="contoh_200">Contoh: 200</string>
-    <string name="jadwal_makan">Jadwal Makan</string>
+    <string name="jadwal_makan">Jadwal Makan:</string>
     <string name="pagi_siang">Pagi - Siang</string>
     <string name="siang_sore">Siang - Sore</string>
     <string name="pagi_sore">Pagi - Sore</string>
@@ -53,10 +53,30 @@
     <string name="nama_kandang">Nama Kandang:</string>
     <string name="lokasi_kandang">Lokasi Kandang:</string>
     <string name="luas_kandang">Luas Kandang:</string>
+    <string name="pilih_kandang">Pilih Kandang:</string>
+    <string name="form_tambah_data_kandang">Form Tambah Data Kandang</string>
+    <string name="form_tambah_data_obat">Form Tambah Data Obat</string>
+    <string name="masukan_jumlah_obat">Masukan Jumlah Obat:</string>
+    <string name="contoh_vita_plex">Contoh: Vita Plex</string>
+    <string name="masukan_nama_obat">Masukan nama obat:</string>
+    <string name="contoh_memberikan_imunisasi_pada_hewan_terhadap_penyakit">Contoh: Memberikan imunisasi pada hewan terhadap penyakit ...</string>
+    <string name="jelaskan_deskripsi_obat">Jelaskan Deskripsi Obat:</string>
+    <string name="contoh_2_kali_sebulan">Contoh: 2 Kali Sebulan</string>
+    <string name="masukan_aturan_penggunaan_obat">Masukan Aturan Penggunaan Obat:</string>
+    <string name="detail_obat">Detail Obat</string>
+    <string name="nama_obat">Nama Obat:</string>
+    <string name="jumlah_obat">Jumlah Obat:</string>
+    <string name="aturan_pengguanaan_obat">Pengguanaan Obat:</string>
     <string-array name="jenis_hewan">
         <item>Jenis Hewan</item>
         <item>Ovipar (Bertelur)</item>
         <item>Vivipar (Malahirkan)</item>
         <item>Ovovivipar (Bertelur dan Melahirkan)</item>
+    </string-array>
+    <string-array name="jadwal_makan">
+        <item>Jadwal Makan</item>
+        <item>Pagi-Siang</item>
+        <item>Siang-Sore</item>
+        <item>Pagi-Sore</item>
     </string-array>
 </resources>

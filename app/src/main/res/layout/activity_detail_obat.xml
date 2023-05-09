@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".DetailObatActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/textViewDetailObat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:gravity="center"
+                android:text="@string/detail_obat"
+                android:textColor="@color/tema_aplikasi3"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewDetailNamaObat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/nama_obat"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDetailObat" />
+
+            <TextView
+                android:id="@+id/textViewDetailJumlahObat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/jumlah_obat"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toStartOf="@+id/textViewDetailNamaObat"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDetailNamaObat" />
+
+            <TextView
+                android:id="@+id/textViewDetailAturanObat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/aturan_pengguanaan_obat"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toStartOf="@+id/textViewDetailJumlahObat"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDetailJumlahObat" />
+
+            <TextView
+                android:id="@+id/textViewDetailDeskripsiObat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/aturan_pengguanaan_obat"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toStartOf="@+id/textViewDetailAturanObat"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDetailAturanObat" />
+
+            <TextView
+                android:id="@+id/textViewResultNamaObat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/tes"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toEndOf="@+id/textViewDetailAturanObat"
+                app:layout_constraintTop_toTopOf="@+id/textViewDetailNamaObat" />
+
+            <TextView
+                android:id="@+id/textViewResultJumlahObat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/tes"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toStartOf="@+id/textViewResultNamaObat"
+                app:layout_constraintTop_toTopOf="@+id/textViewDetailJumlahObat" />
+
+            <TextView
+                android:id="@+id/textViewResultAturanObat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/tes"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toStartOf="@+id/textViewResultJumlahObat"
+                app:layout_constraintTop_toTopOf="@+id/textViewDetailAturanObat" />
+
+            <TextView
+                android:id="@+id/textViewResultDeskripsiObat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/tes"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toStartOf="@+id/textViewResultAturanObat"
+                app:layout_constraintTop_toTopOf="@+id/textViewDetailDeskripsiObat" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

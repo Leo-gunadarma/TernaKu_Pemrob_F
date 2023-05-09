@@ -24,18 +24,31 @@ public class MainActivity extends AppCompatActivity {
                 menuKelolaHewan();
             }
         });
+        kelolaKandang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                menuKelolaKandang();
+            }
+        });
+
+        kelolaObat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                menuKelolaObat();
+            }
+        });
     }
     public void menuKelolaHewan(){
         Intent intent = new Intent(MainActivity.this, TambahHewanActivity.class);
         startActivity(intent);
     }
     public void menuKelolaKandang(){
-//        Intent intent = new Intent(MainActivity.this, KelolaKandangActivity.class);
-//        startActivity(intent);
+        Intent intent = new Intent(MainActivity.this, TambahKandangActivity.class);
+        startActivity(intent);
     }
     public void menuKelolaObat(){
-//        Intent intent = new Intent(MainActivity.this, KelolaObatActivity.class);
-//        startActivity(intent);
+        Intent intent = new Intent(MainActivity.this, TambahObatActivity.class);
+        startActivity(intent);
     }
     public void menuPengaturanProfil(){
 //        Intent intent = new Intent(MainActivity.this, ProfilActivity.class);

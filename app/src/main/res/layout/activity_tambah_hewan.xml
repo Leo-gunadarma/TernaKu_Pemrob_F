@@ -137,32 +137,46 @@
             android:textColor="@color/black"
             android:textSize="16sp" />
 
-        <RadioGroup
-            android:id="@+id/radioGroupJadwalMakan"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
             android:background="@drawable/input_box">
 
-            <RadioButton
-                android:id="@+id/radioButtonPagiSiang"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:text="@string/pagi_siang" />
+            <Spinner
+                android:id="@+id/spinnerJadwalMakan"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:backgroundTintMode="add"
+                android:entries="@array/jadwal_makan" />
+        </FrameLayout>
 
-            <RadioButton
-                android:id="@+id/radioButtonSiangSore"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:text="@string/siang_sore" />
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amaranth"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/pilih_kandang"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
-            <RadioButton
-                android:id="@+id/radioButtonPagiSore"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:text="@string/pagi_sore" />
-        </RadioGroup>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/input_box">
+
+            <Spinner
+                android:id="@+id/spinnerPilihKandang"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:backgroundTintMode="add"
+                android:entries="@array/jadwal_makan" />
+        </FrameLayout>
 
         <Button
             android:id="@+id/buttonSimpan"

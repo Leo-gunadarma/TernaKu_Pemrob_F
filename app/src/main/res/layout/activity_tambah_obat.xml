@@ -5,22 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".TambahKandangActivity">
+    tools:context=".TambahObatActivity">
+
 
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/textViewTambahObat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/amaranth"
-        android:text="@string/form_tambah_data_kandang"
+        android:text="@string/form_tambah_data_obat"
         android:textColor="@color/tema_aplikasi3"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:layout_width="320dp"
         android:layout_height="wrap_content"
@@ -28,72 +28,48 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTambahObat"
         app:layout_constraintVertical_bias="0.124">
 
         <TextView
-            android:id="@+id/textViewNamaKandang"
+            android:id="@+id/textViewNamaObat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/amaranth"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
-            android:text="@string/masukan_nama_kandang"
+            android:text="@string/masukan_nama_obat"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/editTextNamaKandang"
+            android:id="@+id/editTextNamaObat"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:autofillHints="Contoh: Kandang Ayam dan Kambing"
+            android:autofillHints="Contoh: Vita Plex"
             android:background="@drawable/input_box"
             android:ems="10"
-            android:hint="@string/contoh_kandang_ayam_dan_kambing"
+            android:hint="@string/contoh_vita_plex"
             android:inputType="textPersonName"
             android:paddingStart="10dp"
             android:paddingEnd="10dp" />
 
         <TextView
-            android:id="@+id/textViewLokasiKandang"
+            android:id="@+id/textViewJumlahObat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/amaranth"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
-            android:text="@string/masukan_lokasi_kandang"
+            android:text="@string/masukan_jumlah_obat"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/editTextLokasiKandang"
+            android:id="@+id/editTextJumlahObat"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:autofillHints="@string/masukan_ras_hewan"
-            android:background="@drawable/input_box"
-            android:ems="10"
-            android:hint="@string/contoh_sebelah_barat_ternak"
-            android:inputType="textPersonName"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp" />
-
-        <TextView
-            android:id="@+id/textViewLuasKandang"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autofillHints="Masukan Jumlah Hewan"
-            android:fontFamily="@font/amaranth"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp"
-            android:text="@string/masukan_luas_kandang_m_u00b2"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/editTextLuasKandang"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:autofillHints="MASUK"
+            android:autofillHints="Contoh: 20"
             android:background="@drawable/input_box"
             android:ems="10"
             android:hint="@string/contoh_20"
@@ -101,9 +77,55 @@
             android:paddingStart="10dp"
             android:paddingEnd="10dp" />
 
+        <TextView
+            android:id="@+id/textViewDeskripsiObat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amaranth"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/jelaskan_deskripsi_obat"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextDeskripsiObat"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:autofillHints="@string/contoh_memberikan_imunisasi_pada_hewan_terhadap_penyakit"
+            android:background="@drawable/input_box"
+            android:ems="10"
+            android:hint="@string/contoh_memberikan_imunisasi_pada_hewan_terhadap_penyakit"
+            android:inputType="textMultiLine"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+
+        <TextView
+            android:id="@+id/textViewAturanObat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amaranth"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/masukan_aturan_penggunaan_obat"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextAturanObat"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:autofillHints="Contoh: "
+            android:background="@drawable/input_box"
+            android:ems="10"
+            android:hint="@string/contoh_2_kali_sebulan"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
 
         <Button
-            android:id="@+id/buttonSimpanKandang"
+            android:id="@+id/buttonSimpanObat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="30dp"
@@ -111,5 +133,4 @@
             app:icon="@drawable/ic_simpan"
             app:iconGravity="textEnd" />
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
