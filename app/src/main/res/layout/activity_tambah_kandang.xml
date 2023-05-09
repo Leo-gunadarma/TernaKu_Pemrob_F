@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".TambahHewanActivity">
+    tools:context=".TambahKandangActivity">
 
 
     <TextView
@@ -22,147 +22,85 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9">
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.124">
 
         <TextView
-            android:id="@+id/textViewNamaHewan"
+            android:id="@+id/textViewNamaKandang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/amaranth"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
-            android:text="@string/masukan_nama_hewan"
+            android:text="@string/masukan_nama_kandang"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/editTextNamaHewan"
+            android:id="@+id/editTextNamaKandang"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:autofillHints="@string/masukan_nama_hewan"
+            android:autofillHints="Contoh: Kandang Ayam dan Kambing"
             android:background="@drawable/input_box"
             android:ems="10"
-            android:hint="@string/contoh_ayam"
+            android:hint="@string/contoh_kandang_ayam_dan_kambing"
             android:inputType="textPersonName"
             android:paddingStart="10dp"
             android:paddingEnd="10dp" />
 
         <TextView
-            android:id="@+id/textViewRasHewan"
+            android:id="@+id/textViewLokasiKandang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/amaranth"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
-            android:text="@string/masukan_ras_hewan"
+            android:text="@string/masukan_lokasi_kandang"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/editTextRasHewan"
+            android:id="@+id/editTextLokasiKandang"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:autofillHints="@string/masukan_ras_hewan"
             android:background="@drawable/input_box"
             android:ems="10"
-            android:hint="@string/contoh_boiler"
+            android:hint="@string/contoh_sebelah_barat_ternak"
             android:inputType="textPersonName"
             android:paddingStart="10dp"
             android:paddingEnd="10dp" />
 
         <TextView
-            android:id="@+id/textViewJenisHewan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/amaranth"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp"
-            android:text="@string/masukan_jenis_hewan"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/input_box">
-
-            <Spinner
-                android:id="@+id/spinnerJenisHewan"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_gravity="center"
-                android:backgroundTintMode="add"
-                android:entries="@array/jenis_hewan" />
-        </FrameLayout>
-
-        <TextView
-            android:id="@+id/textViewJumlahHewan"
+            android:id="@+id/textViewLuasKandang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints="Masukan Jumlah Hewan"
             android:fontFamily="@font/amaranth"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
-            android:text="@string/masukan_jumlah_hewan"
+            android:text="@string/masukan_luas_kandang_m_u00b2"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/editTextJumlahHewan"
+            android:id="@+id/editTextLuasKandang"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="48dp"
             android:autofillHints="MASUK"
             android:background="@drawable/input_box"
             android:ems="10"
-            android:hint="@string/contoh_200"
+            android:hint="@string/contoh_20"
             android:inputType="number"
             android:paddingStart="10dp"
             android:paddingEnd="10dp" />
 
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/amaranth"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp"
-            android:text="@string/jadwal_makan"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
-
-        <RadioGroup
-            android:id="@+id/radioGroupJadwalMakan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/input_box">
-
-            <RadioButton
-                android:id="@+id/radioButtonPagiSiang"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:text="@string/pagi_siang" />
-
-            <RadioButton
-                android:id="@+id/radioButtonSiangSore"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:text="@string/siang_sore" />
-
-            <RadioButton
-                android:id="@+id/radioButtonPagiSore"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:text="@string/pagi_sore" />
-        </RadioGroup>
 
         <Button
             android:id="@+id/buttonSimpan"

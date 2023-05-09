@@ -12,6 +12,15 @@
         android:theme="@style/Theme.TernakKU"
         tools:targetApi="31">
         <activity
+            android:name=".DetailKandangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TambahKandangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailHewanActivity"
+            android:exported="false" />
+        <activity
             android:name=".TambahHewanActivity"
             android:exported="false" />
         <activity

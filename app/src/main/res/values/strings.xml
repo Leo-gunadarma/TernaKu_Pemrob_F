@@ -36,6 +36,23 @@
     <string name="siang_sore">Siang - Sore</string>
     <string name="pagi_sore">Pagi - Sore</string>
     <string name="simpan_data">Simpan Data</string>
+    <string name="tes">tes</string>
+    <string name="nama_hewan">Nama Hewan:</string>
+    <string name="ras_hewan">Ras Hewan:</string>
+    <string name="jenis_hewan">Jenis Hewan:</string>
+    <string name="jumlah_hewan">Jumlah Hewan:</string>
+    <string name="jadwal_makan_detail">Jadwal Makan:</string>
+    <string name="masukan_nama_kandang">Masukan nama kandang:</string>
+    <string name="masukan_lokasi_kandang">Masukan Lokasi Kandang:</string>
+    <string name="masukan_luas_kandang_m_u00b2">Masukan Luas Kandang (m²):</string>
+    <string name="contoh_kandang_ayam_dan_kambing">Contoh: Kandang Ayam dan Kambing</string>
+    <string name="contoh_sebelah_barat_ternak">Contoh: Sebelah Barat Ternak</string>
+    <string name="contoh_20">Contoh: 20</string>
+    <string name="detail_hewan">Detail Hewan</string>
+    <string name="detail_kandang">Detail Kandang</string>
+    <string name="nama_kandang">Nama Kandang:</string>
+    <string name="lokasi_kandang">Lokasi Kandang:</string>
+    <string name="luas_kandang">Luas Kandang:</string>
     <string-array name="jenis_hewan">
         <item>Jenis Hewan</item>
         <item>Ovipar (Bertelur)</item>
