@@ -12,6 +12,12 @@
         android:theme="@style/Theme.TernakKU"
         tools:targetApi="31">
         <activity
+            android:name=".KelolaObatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KelolaKandangActivity"
+            android:exported="false"/>
+        <activity
             android:name=".DetailObatActivity"
             android:exported="false" />
         <activity

@@ -19,11 +19,14 @@ public class DetailObatActivity extends AppCompatActivity {
         detailDeskripsiObat= findViewById(R.id.textViewResultDeskripsiObat);
         detailAturanObat= findViewById(R.id.textViewResultAturanObat);
 
+
+        if (getIntent().getExtras()!= null) {
 //        Mengambil nilai intent dan memasukannya kedalam text view
-        Intent hasil = getIntent();
-        detailObat.setText(hasil.getStringExtra("nama_obat"));
-        detailJumlahObat.setText(hasil.getStringExtra("jumlah_obat"));
-        detailDeskripsiObat.setText(hasil.getStringExtra("deskripsi_obat"));
-        detailAturanObat.setText(hasil.getStringExtra("aturan_obat"));
+            Intent hasil = getIntent();
+            detailObat.setText(hasil.getStringExtra("nama_obat"));
+            detailJumlahObat.setText(hasil.getStringExtra("jumlah_obat"));
+            detailDeskripsiObat.setText(hasil.getStringExtra("deskripsi_obat"));
+            detailAturanObat.setText(hasil.getStringExtra("aturan_obat"));
+        }
     }
 }

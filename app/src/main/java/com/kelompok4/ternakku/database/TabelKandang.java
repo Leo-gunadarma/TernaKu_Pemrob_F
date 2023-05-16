@@ -14,6 +14,33 @@ public class TabelKandang {
     String lokasiKandang;
     @ColumnInfo (name = "luas_kandang")
     int luasKandang;
-    @ColumnInfo (name = "kapasitas_kandang")
-    int kapasitasKandang;
+
+    public TabelKandang(String namaKandang, String lokasiKandang, int luasKandang) {
+        this.namaKandang = namaKandang;
+        this.lokasiKandang = lokasiKandang;
+        this.luasKandang = luasKandang;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNamaKandang() {
+        return namaKandang;
+    }
+
+    public String getLokasiKandang() {
+        return lokasiKandang;
+    }
+
+    public int getLuasKandang() {
+        return luasKandang;
+    }
+
 }
+
+

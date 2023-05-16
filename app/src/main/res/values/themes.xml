@@ -13,4 +13,10 @@
         <item name="android:statusBarColor">@color/tema_aplikasi3</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="Theme.TernakKU.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.TernakKU.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.TernakKU.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

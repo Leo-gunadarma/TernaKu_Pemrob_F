@@ -43,11 +43,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void menuKelolaKandang(){
-        Intent intent = new Intent(MainActivity.this, TambahKandangActivity.class);
+        Intent intent = new Intent(MainActivity.this, KelolaKandangActivity.class);
         startActivity(intent);
     }
     public void menuKelolaObat(){
-        Intent intent = new Intent(MainActivity.this, TambahObatActivity.class);
+        Intent intent = new Intent(MainActivity.this, KelolaObatActivity.class);
         startActivity(intent);
     }
     public void menuPengaturanProfil(){

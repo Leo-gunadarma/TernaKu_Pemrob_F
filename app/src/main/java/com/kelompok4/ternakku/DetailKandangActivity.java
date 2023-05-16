@@ -19,9 +19,12 @@ public class DetailKandangActivity extends AppCompatActivity {
         detailLuas= findViewById(R.id.textViewResultLuasKandang);
 
 //        Mengambil nilai intent dan memasukannya kedalam text view
-        Intent hasil = getIntent();
-        detailKandang.setText(hasil.getStringExtra("nama_kandang"));
-        detailLokasi.setText(hasil.getStringExtra("lokasi_kandang"));
-        detailLuas.setText(hasil.getStringExtra("luas_kandang"));
+        if (getIntent().getExtras()!= null){
+            Intent hasil = getIntent();
+            detailKandang.setText(hasil.getStringExtra("nama_kandang"));
+            detailLokasi.setText(hasil.getStringExtra("lokasi_kandang"));
+            detailLuas.setText(hasil.getStringExtra("luas_kandang"));
+        }
+
     }
 }

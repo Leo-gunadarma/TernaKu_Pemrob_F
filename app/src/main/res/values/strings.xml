@@ -67,6 +67,10 @@
     <string name="nama_obat">Nama Obat:</string>
     <string name="jumlah_obat">Jumlah Obat:</string>
     <string name="aturan_pengguanaan_obat">Pengguanaan Obat:</string>
+    <string name="add">add</string>
+    <string name="textviewrecycleviewresult">TextViewRecycleViewResult</string>
+    <string name="fiturkandang">fiturkandang</string>
+    <string name="textviewrecycleviewadater">TextViewRecycleviewAdater</string>
     <string-array name="jenis_hewan">
         <item>Jenis Hewan</item>
         <item>Ovipar (Bertelur)</item>
