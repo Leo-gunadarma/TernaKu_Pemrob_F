@@ -35,6 +35,12 @@ public interface DaoCRUD {
     @Query("SELECT * FROM tb_kandang ")
     List<TabelKandang> getAllDataKandang();
 
+    @Query("SELECT nama_kandang FROM tb_kandang ")
+    List<String> getAllNamaKandang();
+
+    @Query("SELECT id FROM tb_kandang WHERE nama_kandang = :namaKandang")
+    int getKandangIdByNama(String namaKandang);
+
     @Insert (onConflict = OnConflictStrategy.REPLACE)
     void insertDataObat (TabelObat ... tabelObats);
 

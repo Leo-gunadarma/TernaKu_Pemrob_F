@@ -2,10 +2,17 @@ package com.kelompok4.ternakku.database;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
 
-@Entity(tableName = "tb_hewan")
+@Entity(tableName = "tb_hewan",foreignKeys = {
+        @ForeignKey(
+                entity = TabelKandang.class,
+                parentColumns = "id",
+                childColumns = "kandang_id"
+        )
+})
 public class TabelHewan {
     @PrimaryKey(autoGenerate = true)
     int id;
@@ -19,4 +26,6 @@ public class TabelHewan {
     int jumlahHewan;
     @ColumnInfo (name = "jadwal_makan")
     String jadwalMakan;
+    @ColumnInfo (name = "kandang_id")
+    int kandangID;
 }
