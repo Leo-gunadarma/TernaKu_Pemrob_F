@@ -71,6 +71,9 @@
     <string name="textviewrecycleviewresult">TextViewRecycleViewResult</string>
     <string name="fiturkandang">fiturkandang</string>
     <string name="textviewrecycleviewadater">TextViewRecycleviewAdater</string>
+    <string name="pilih_obat">Pilih Obat:</string>
+    <string name="kandang_hewan_detail">Kandang Hewan:</string>
+    <string name="obat_hewan">Obat Hewan:</string>
     <string-array name="jenis_hewan">
         <item>Jenis Hewan</item>
         <item>Ovipar (Bertelur)</item>
@@ -82,5 +85,11 @@
         <item>Pagi-Siang</item>
         <item>Siang-Sore</item>
         <item>Pagi-Sore</item>
+    </string-array>
+    <string-array name="pilih_kandang">
+        <item>Pilih Kandang</item>
+    </string-array>
+    <string-array name="pilih_obat">
+        <item>Pilih Obat</item>
     </string-array>
 </resources>

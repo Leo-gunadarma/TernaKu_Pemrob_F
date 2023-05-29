@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void menuKelolaHewan(){
-        Intent intent = new Intent(MainActivity.this, TambahHewanActivity.class);
+        Intent intent = new Intent(MainActivity.this, KelolaHewanActivity.class);
         startActivity(intent);
     }
     public void menuKelolaKandang(){

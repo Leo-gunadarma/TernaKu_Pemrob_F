@@ -41,6 +41,35 @@ public interface DaoCRUD {
     @Query("SELECT id FROM tb_kandang WHERE nama_kandang = :namaKandang")
     int getKandangIdByNama(String namaKandang);
 
+    @Query("SELECT id FROM tb_obat WHERE nama_obat = :namaObat")
+    int getObatIdByNama(String namaObat);
+
+    @Query("SELECT nama_obat FROM tb_obat WHERE id = :obatId")
+    String getNamaObatById(int obatId);
+
+    @Query("SELECT nama_kandang FROM tb_kandang WHERE id = :kandangId")
+    String getNamaKandangById(int kandangId);
+
+//    Melakukan pengecekan apakah id kandang ada di tabel hewan
+    @Query("SELECT COUNT(*) FROM tb_hewan WHERE kandang_id = :kandangId")
+    int getHewanCountInKandang(int kandangId);
+
+    @Query("SELECT COUNT(*) FROM tb_hewan WHERE obat_id = :obat_id")
+    int getHewanCountInObat(int obat_id);
+
+
+    // Melakukan pengecekan jumlah data dalam tabel obat
+    @Query("SELECT COUNT(*) FROM tb_obat")
+    int getObatCount();
+
+
+    // Melakukan pengecekan jumlah data dalam tabel kandang
+    @Query("SELECT COUNT(*) FROM tb_kandang")
+    int getKandangCount();
+
+    @Query("SELECT nama_obat FROM tb_obat ")
+    List<String> getAllNamaObat();
+
     @Insert (onConflict = OnConflictStrategy.REPLACE)
     void insertDataObat (TabelObat ... tabelObats);
 

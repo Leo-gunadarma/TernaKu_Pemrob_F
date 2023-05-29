@@ -93,15 +93,26 @@
                 app:layout_constraintTop_toBottomOf="@+id/textViewDetailJumlahHewan" />
 
             <TextView
-                android:id="@+id/textViewDetailJadwalMakanHewan2"
+                android:id="@+id/textViewDetailKandang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:fontFamily="@font/amaranth"
-                android:text="@string/jadwal_makan_detail"
+                android:text="@string/kandang_hewan_detail"
                 android:textColor="@color/tema_aplikasi3"
-                app:layout_constraintStart_toStartOf="@+id/textViewDetailJumlahHewan"
-                app:layout_constraintTop_toBottomOf="@+id/textViewDetailJumlahHewan" />
+                app:layout_constraintStart_toStartOf="@+id/textViewDetailJadwalMakanHewan"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDetailJadwalMakanHewan" />
+
+            <TextView
+                android:id="@+id/textViewDetailObat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/obat_hewan"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toStartOf="@+id/textViewDetailKandang"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDetailKandang" />
 
             <TextView
                 android:id="@+id/textViewResultRasHewan"
@@ -117,7 +128,7 @@
                 android:id="@+id/textViewResultNamaHewan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="14dp"
+                android:layout_marginStart="24dp"
                 android:fontFamily="@font/amaranth"
                 android:text="@string/tes"
                 android:textColor="@color/tema_aplikasi3"
@@ -153,6 +164,26 @@
                 android:textColor="@color/tema_aplikasi3"
                 app:layout_constraintStart_toStartOf="@+id/textViewResultJumlahHewan"
                 app:layout_constraintTop_toTopOf="@+id/textViewDetailJadwalMakanHewan" />
+
+            <TextView
+                android:id="@+id/textViewResultKandangHewan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/tes"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toStartOf="@+id/textViewResultJadwalMakan"
+                app:layout_constraintTop_toTopOf="@+id/textViewDetailKandang" />
+
+            <TextView
+                android:id="@+id/textViewResultObatHewan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/tes"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toStartOf="@+id/textViewResultKandangHewan"
+                app:layout_constraintTop_toTopOf="@+id/textViewDetailObat" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

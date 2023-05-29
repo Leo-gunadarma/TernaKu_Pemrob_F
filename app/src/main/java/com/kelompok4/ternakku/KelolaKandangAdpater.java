@@ -1,14 +1,18 @@
 package com.kelompok4.ternakku;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.kelompok4.ternakku.database.DatabaseTernaku;
@@ -38,7 +42,7 @@ public class KelolaKandangAdpater extends RecyclerView.Adapter<KelolaKandangAdpa
     }
 
     @Override
-    public void onBindViewHolder(@NonNull KelolaKandangAdpater.viewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull KelolaKandangAdpater.viewHolder holder, @SuppressLint("RecyclerView")int position) {
 //        Menambahkan holder untuk merubah tampilan sesuai data
         holder.namaKandang.setText(dataKandang.get(position).getNamaKandang());
         holder.lokasiKandang.setText("Lokasi: "+ dataKandang.get(position).getLokasiKandang());
@@ -55,7 +59,44 @@ public class KelolaKandangAdpater extends RecyclerView.Adapter<KelolaKandangAdpa
         holder.delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                int kandangId =dataKandang.get(position).getId();
+                int validasiKandang = database.daoHewan().getHewanCountInKandang(kandangId);
+                if(validasiKandang == 0){
+                    AlertDialog.Builder deleteMsg = new AlertDialog.Builder(context);
+                    deleteMsg.setTitle("Apakah anda yakin ingin menghapus data?");
+                    deleteMsg.setMessage("Anda akan menghapus data \""+dataKandang.get(position).getNamaKandang()+ "\" \n"+
+                            "Tekan tombol ok jika anda yakin");
+                    deleteMsg.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            database.daoHewan().deleteKandang(dataKandang.get(position));
+                            dataKandang.remove(position);
+                            notifyItemRemoved(position);
+                            notifyItemRangeRemoved(position, dataKandang.size());
+                            Toast.makeText(context, "Data Berhasil Dihapus", Toast.LENGTH_SHORT).show();
+                        }
+                    });
 
+                    deleteMsg.setNeutralButton("Tidak", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            dialogInterface.dismiss();
+                        }
+                    });
+                    deleteMsg.show();
+                }else{
+                    AlertDialog.Builder deleteMsg = new AlertDialog.Builder(context);
+                    deleteMsg.setIcon(R.drawable.ic_warning);
+                    deleteMsg.setTitle("Tidak Dapat Menghapus Data");
+                    deleteMsg.setMessage("Anda tidak dapat menghapus data, dikarenakan data digunakan pada kelola hewan");
+                    deleteMsg.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            dialogInterface.dismiss();
+                        }
+                    });
+                    deleteMsg.show();
+                }
             }
         });
 
