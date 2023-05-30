@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ProfilActivity">
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="657dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Profil Pengguna"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/amaranth"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:text="Nama"
+                    android:textColor="@color/tema_aplikasi3"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:text=":"
+                    android:textColor="@color/tema_aplikasi3"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textViewNama"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center|start"
+                    android:text="nama"
+                    android:textColor="@color/tema_aplikasi3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:text="Email"
+                    android:textColor="@color/tema_aplikasi3"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:text=":"
+                    android:textColor="@color/tema_aplikasi3"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textViewEmail"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center|start"
+                    android:text="email"
+                    android:textColor="@color/tema_aplikasi3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/alamat"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:text="Alamat :"
+                    android:textColor="@color/tema_aplikasi3"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:text=":"
+                    android:textColor="@color/tema_aplikasi3"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textViewAlamat"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center|start"
+                    android:text="alamat"
+                    android:textColor="@color/tema_aplikasi3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/telp"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:text="No. Telp :"
+                    android:textColor="@color/tema_aplikasi3"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:text=":"
+                    android:textColor="@color/tema_aplikasi3"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textViewTelp"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center|start"
+                    android:text="telp"
+                    android:textColor="@color/tema_aplikasi3" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

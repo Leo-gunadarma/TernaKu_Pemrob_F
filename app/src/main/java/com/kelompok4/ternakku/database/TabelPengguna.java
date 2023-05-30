@@ -18,4 +18,38 @@ public class TabelPengguna {
     String alamatPengguna;
     @ColumnInfo (name = "no_telp_pengguna")
     String noTelpPengguna;
+
+
+    public TabelPengguna(String namaPengguna, String emailPengguna, String passwordPengguna, String alamatPengguna, String noTelpPengguna) {
+        this.namaPengguna = namaPengguna;
+        this.emailPengguna = emailPengguna;
+        this.passwordPengguna = passwordPengguna;
+        this.alamatPengguna = alamatPengguna;
+        this.noTelpPengguna = noTelpPengguna;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNamaPengguna() {
+        return namaPengguna;
+    }
+
+    public String getEmailPengguna() {
+        return emailPengguna;
+    }
+
+    public String getPasswordPengguna() {
+        return passwordPengguna;
+    }
+
+    public String getAlamatPengguna() {
+        return alamatPengguna;
+    }
+
+    public String getNoTelpPengguna() {
+        return noTelpPengguna;
+    }
 }
+

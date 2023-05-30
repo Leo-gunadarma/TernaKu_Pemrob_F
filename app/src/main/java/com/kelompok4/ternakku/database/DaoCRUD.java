@@ -85,18 +85,6 @@ public interface DaoCRUD {
     @Insert (onConflict = OnConflictStrategy.REPLACE)
     void insertDataPengguna (TabelPengguna ... tabelPenggunas);
 
-    @Query("UPDATE tb_pengguna SET nama_pengguna=:nama, email_pengguna=:email, alamat_pengguna=:alamat, no_telp_pengguna=:telp WHERE id=:id")
-    void updatePengguna(int id, String nama, String email, String alamat, String telp);
-
-    @Query("UPDATE tb_pengguna SET password_pengguna=:pass WHERE id=:id")
-    void updatePass(int id, String pass);
-
-    @Delete
-    void deletePengguna(TabelPengguna tabelPengguna);
-
-    @Query("SELECT * FROM tb_pengguna")
-    List<TabelPengguna> getAllDataPengguna();
-
     @Query("SELECT * FROM tb_pengguna WHERE email_pengguna=:email AND password_pengguna=:password")
     List<TabelPengguna> loginPengguna(String email, String password);
 

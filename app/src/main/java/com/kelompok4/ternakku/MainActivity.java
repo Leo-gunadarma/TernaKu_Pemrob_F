@@ -37,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
                 menuKelolaObat();
             }
         });
+
+        kelolaPengaturan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                menuPengaturanProfil();
+            }
+        });
     }
     public void menuKelolaHewan(){
         Intent intent = new Intent(MainActivity.this, KelolaHewanActivity.class);
@@ -51,8 +58,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void menuPengaturanProfil(){
-//        Intent intent = new Intent(MainActivity.this, ProfilActivity.class);
-//        startActivity(intent);
+        Intent intent = new Intent(MainActivity.this, ProfilActivity.class);
+        startActivity(intent);
     }
 
     @Override

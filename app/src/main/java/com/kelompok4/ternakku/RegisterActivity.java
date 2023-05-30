@@ -2,15 +2,21 @@ package com.kelompok4.ternakku;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.kelompok4.ternakku.database.DatabaseTernaku;
+import com.kelompok4.ternakku.database.TabelPengguna;
+import com.kelompok4.ternakku.helper.SessionManagement;
+
 public class RegisterActivity extends AppCompatActivity {
     EditText editTextNama, editTextEmail, editTextPassword, editTextAlamat, editTextNoTelp;
     Button tombolRegister;
+    DatabaseTernaku database;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +29,8 @@ public class RegisterActivity extends AppCompatActivity {
         editTextNoTelp = findViewById(R.id.editTextNoTelp);
         tombolRegister = findViewById(R.id.buttonDaftar);
 
+
+        database = DatabaseTernaku.getDbInstance(this.getApplicationContext());
         tombolRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -42,11 +50,30 @@ public class RegisterActivity extends AppCompatActivity {
                     editTextNoTelp.setError("No Telp harus diisi !");
                     editTextNoTelp.requestFocus();
                 }else {
+                    String nama = editTextNama.getText().toString().trim();
+                    String email = editTextEmail.getText().toString().trim();
+                    String password = editTextPassword.getText().toString().trim();
+                    String alamat = editTextAlamat.getText().toString().trim();
+                    String notelp = editTextNoTelp.getText().toString().trim();
+
+                    TabelPengguna row = new TabelPengguna(nama, email, password, alamat, notelp);
+                    database.daoHewan().insertDataPengguna(row);
+
                     Toast toast = Toast.makeText(RegisterActivity.this, "Register Berhasil, Silahkan Login", Toast.LENGTH_LONG);
                     toast.show();
                     finish();
                 }
             }
         });
+    }
+    @Override
+    protected void onStart() {
+        super.onStart();
+        SessionManagement session = new SessionManagement(this);
+        if(session.statusLogin()){
+            Intent mainIntent = new Intent(RegisterActivity.this, MainActivity.class);
+            startActivity(mainIntent);
+            finish();
+        }
     }
 }
