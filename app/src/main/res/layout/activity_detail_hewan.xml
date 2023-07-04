@@ -116,7 +116,7 @@
 
             <TextView
                 android:id="@+id/textViewResultRasHewan"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/amaranth"
                 android:text="@string/tes"

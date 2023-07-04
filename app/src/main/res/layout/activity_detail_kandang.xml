@@ -88,8 +88,12 @@
                 android:fontFamily="@font/amaranth"
                 android:text="@string/tes"
                 android:textColor="@color/tema_aplikasi3"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/textViewResultNamaKandang"
-                app:layout_constraintTop_toTopOf="@+id/textViewDetailLokasiKandang" />
+                app:layout_constraintTop_toTopOf="@+id/textViewDetailLokasiKandang"
+                app:layout_constraintWidth_default="wrap" />
 
             <TextView
                 android:id="@+id/textViewResultLuasKandang"
@@ -98,7 +102,7 @@
                 android:fontFamily="@font/amaranth"
                 android:text="@string/tes"
                 android:textColor="@color/tema_aplikasi3"
-                app:layout_constraintStart_toStartOf="@+id/textViewResultLokasiKandang"
+                app:layout_constraintStart_toStartOf="@+id/textViewResultNamaKandang"
                 app:layout_constraintTop_toTopOf="@+id/textViewDetailLuasKandang" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

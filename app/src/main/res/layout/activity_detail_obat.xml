@@ -76,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:fontFamily="@font/amaranth"
-                android:text="@string/aturan_pengguanaan_obat"
+                android:text="Deskripsi Obat"
                 android:textColor="@color/tema_aplikasi3"
                 app:layout_constraintStart_toStartOf="@+id/textViewDetailAturanObat"
                 app:layout_constraintTop_toBottomOf="@+id/textViewDetailAturanObat" />
@@ -109,18 +109,25 @@
                 android:fontFamily="@font/amaranth"
                 android:text="@string/tes"
                 android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/textViewResultJumlahObat"
-                app:layout_constraintTop_toTopOf="@+id/textViewDetailAturanObat" />
+                app:layout_constraintTop_toTopOf="@+id/textViewDetailAturanObat"
+                app:layout_constraintWidth_default="wrap" />
 
             <TextView
                 android:id="@+id/textViewResultDeskripsiObat"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/amaranth"
+                android:scrollHorizontally="false"
                 android:text="@string/tes"
                 android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/textViewResultAturanObat"
-                app:layout_constraintTop_toTopOf="@+id/textViewDetailDeskripsiObat" />
+                app:layout_constraintTop_toTopOf="@+id/textViewDetailDeskripsiObat"
+                app:layout_constraintWidth_default="wrap" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

@@ -90,4 +90,11 @@ public interface DaoCRUD {
 
     @Query("SELECT * FROM tb_pengguna WHERE id=:id")
     List<TabelPengguna> selectPengguna(int id);
+
+    @Query("UPDATE tb_pengguna SET nama_pengguna=:nama, email_pengguna=:email, alamat_pengguna=:alamat, no_telp_pengguna=:telp WHERE id=:id")
+    void updatePengguna(int id, String nama, String email, String alamat, String telp);
+
+    @Query("UPDATE tb_pengguna SET password_pengguna=:pass WHERE id=:id")
+    void updatePass(int id, String pass);
+
 }

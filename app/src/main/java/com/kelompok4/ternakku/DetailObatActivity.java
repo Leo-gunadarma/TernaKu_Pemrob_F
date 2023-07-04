@@ -3,7 +3,9 @@ package com.kelompok4.ternakku;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.text.LineBreaker;
 import android.os.Bundle;
+import android.text.Layout;
 import android.widget.TextView;
 
 public class DetailObatActivity extends AppCompatActivity {
@@ -18,7 +20,6 @@ public class DetailObatActivity extends AppCompatActivity {
         detailJumlahObat = findViewById(R.id.textViewResultJumlahObat);
         detailDeskripsiObat= findViewById(R.id.textViewResultDeskripsiObat);
         detailAturanObat= findViewById(R.id.textViewResultAturanObat);
-
 
         if (getIntent().getExtras()!= null) {
 //        Mengambil nilai intent dan memasukannya kedalam text view
